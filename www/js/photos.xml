@@ -1,0 +1,19 @@
+<?xml version="1.0" standalone="yes" ?>
+<PhotoGallery>
+
+	<image  filename="oimg1.jpg" heading="Ballet" />
+	<image  filename="fimg1.jpg" heading="Apple Blossoms" />
+	<image  filename="oimg3.jpg" heading="Puppies" />
+	<image  filename="fimg4.jpg" heading="Lily" />
+	<image  filename="limg3.jpg" heading="Lassen National Park" />
+	<image  filename="oimg2.jpg" heading="Tropical Bloom" />
+	<image  filename="fimg5.jpg" heading="Iris" />
+	<image  filename="fimg2.jpg" heading="Daisy" />
+	<image  filename="limg4.jpg" heading="Mountain Tahiti" />
+	<image  filename="fimg3.jpg" heading="Dahlia" />
+	<image  filename="limg5.jpg" heading="Mountain Hood" />
+
+</PhotoGallery>	
+	
+	
+	

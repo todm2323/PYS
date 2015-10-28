@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+</head>
+<body>
+<div id="landmark-1" data-landmark-id="1">
+	<form id="form">
+		<label for="email">
+			<b>Email</b>
+			<input type="email" id="email" name="email">
+		</label>
+
+		<label for="comment">
+			<b>Comment</b>
+			<textarea id="comment" name="comment" cols="30" rows="10"></textarea>
+		</label>
+		
+		<input type="submit" value="Save">
+	</form>
+</div>
+<script type="text/javascript">
+$('#form').submit(function(){
+	//var landmarkID = $(this).parent().attr('data-landmark-id');
+	//var postData = $(this).serialize();
+	var email=$('#email').val();
+	var commend=$('#commend').val();
+	var dataString="email="+emil+"&commend="+commemd+"&signgup=";
+	if($.trim(email).length>0 & $.trim(commend).length>0)
+{
+$.ajax({
+type: "POST",
+url: 'http://pyswebsite.noip.me/save.php',
+data: dataString,
+crossDomain: true,
+cache: false,
+beforeSend: function(){ $("#signup").val('Connecting...');},
+success: function(data){
+if(data=="success")
+{
+alert("Thank you for Registering with us! you can login now");
+}
+else if(data="exist")
+{
+alert("Hey! You alreay has account! you can login with us");
+}
+else if(data="failed")
+{
+alert("Something Went wrong");
+}
+}
+});
+}
+else{
+	alert("Please try again");
+}
+return false;
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,7 @@
+.ui-li-thumb, .ui-li-icon {
+    left: 1px;
+    max-height: 500px; <-- height
+    max-width: 500px; <-- width
+    position: absolute;
+    top: 0;
+}

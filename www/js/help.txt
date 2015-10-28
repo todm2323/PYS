@@ -1,0 +1,26 @@
+Steps to use this simple Flash Photo Gallery 
+
+Download the zip file and extract the files. You will have a folder called Photo_Gallery1 which will have photos.xml, photogallery.html, photogallery.swf and a photos folder. 
+
+Make sure your images are in the following dimensions and in .jpg format : 
+Width : 360 px
+Height : 300px 
+
+Copy all the images to the folder called photos.
+
+Open photos.xml and edit the file names and headings. E.g
+<image filename="oimg1.jpg" heading="Ballet" />
+oimg1.jpg and Ballet should be changed to your image filename and image heading 
+
+
+To delete images simply delete the line pertaining to that image in the xml file and delete that image from the photos folder.
+
+To add additional images, simply add a new line of code similar as above and edit the file name and the heading. 
+
+
+
+Terms of Use 
+
+The Entheos Flash Photo Galleries may be used in any kinds of personal and/or commercial projects. 
+
+The Entheos Flash Photo Galleries may not be redistributed or resold to other companies or third parties.

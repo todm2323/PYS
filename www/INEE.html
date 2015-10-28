@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jQuery PHP Json Response</title>
+<style type="text/css">
+div
+{
+text-align:center;
+padding:10px;
+}
+ 
+#msg {
+width: 500px;
+margin: 0px auto;
+}
+.members {
+width: 500px ;
+background-color: beige;
+}
+</style>
+</head>
+<body>
+<div id="msg"> </div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+</script>
+<script type="text/javascript">
+ 
+$(document).ready(function(){
+var url="http://localhost/pfbc/json.php";
+$.getJSON(url,function(json){
+// loop through the members here
+$.each(json.members,function(i,dat){
+$("#msg").append(
+'<div class="members">'+
+'<h1>'+dat.id+'</h1>'+
+'<p>Firstname : <em>'+dat.firstname+'</em>'+
+'<p>SurName : <em>'+dat.surname+'</em></p>'+
+'<p>Title : <strong>'+dat.title+'</strong></p>'+
+'<hr>'+
+'</div>'
+);
+});
+});
+});
+ 
+</script>
+</body>
+</html>
